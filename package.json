@@ -1,0 +1,23 @@
+{
+  "name": "nanocache",
+  "description": "Cache Nanocomponents.",
+  "repository": "yoshuawuyts/nanocache",
+  "version": "1.0.0",
+  "scripts": {
+    "deps": "dependency-check . && dependency-check . --extra --no-dev",
+    "start": "node .",
+    "test": "standard && npm run deps"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "dependency-check": "^2.9.2",
+    "standard": "^10.0.3",
+    "tape": "^4.8.0"
+  },
+  "keywords": [
+    "choo",
+    "nanocomponent",
+    "cache"
+  ],
+  "license": "Apache-2.0"
+}

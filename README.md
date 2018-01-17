@@ -11,7 +11,7 @@ var Component = require('choo/component')
 var html = require('choo/html')
 
 module.exports = class Article extends Component {
-  static identity (article) {
+  static id (article) {
     return `article-${article.id}`
   }
 
@@ -48,7 +48,7 @@ cache(myComponent)
 Create a new Nanocache instance.
 
 ### `cache.render(Nanocomponent)`
-Render a Nanocomponent instance. It checks a static `identity` method that
+Render a Nanocomponent instance. It checks a static `id` method that
 returns an id. If the id is not registered in the cache, it creates a new
 instance and caches it. If the id already exists, it returns the cached
 instance.

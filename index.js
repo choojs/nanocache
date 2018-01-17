@@ -26,9 +26,9 @@ ChooComponentCache.prototype.render = function (Component) {
     args.push(arguments[i])
   }
 
-  assert.equal(typeof Component.identity, 'function', 'ChooComponentCache.render: Component.identity should be type function')
-  var id = Component.identity(args)
-  assert.equal(typeof id, 'string', 'ChooComponentCache.render: Component.identity should return type string')
+  assert.equal(typeof Component.id, 'function', 'ChooComponentCache.render: Component.id should be type function')
+  var id = Component.id.apply(Component, args)
+  assert.equal(typeof id, 'string', 'ChooComponentCache.render: Component.id should return type string')
 
   var el = this.cache[id]
   if (!el) {

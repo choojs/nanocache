@@ -1,7 +1,7 @@
 {
-  "name": "nanocache",
+  "name": "nanocomponentcache",
   "description": "Cache Nanocomponents.",
-  "repository": "yoshuawuyts/nanocache",
+  "repository": "yoshuawuyts/nanocomponentcache",
   "version": "1.0.0",
   "scripts": {
     "deps": "dependency-check . && dependency-check . --extra --no-dev",
